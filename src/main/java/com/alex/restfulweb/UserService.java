@@ -46,7 +46,7 @@ public class UserService {
 
     public Optional<User> updateUser(Long id, User user) {
         return userRepository.findById(id).map(existingUser -> {
-            existingUser.setName(user.getName());
+            existingUser.setFull_name(user.getFull_name());
             existingUser.setEmail(user.getEmail());
             return userRepository.save(existingUser);
         });
