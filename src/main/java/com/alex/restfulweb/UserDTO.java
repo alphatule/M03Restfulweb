@@ -1,5 +1,7 @@
 package com.alex.restfulweb;
 
+import lombok.Data;
+
 @Data
 public class UserDTO {
     private Long id;
