@@ -1,6 +1,7 @@
 package com.alex.restfulweb;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "users")
